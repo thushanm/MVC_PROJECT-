@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" prefHeight="640.0" prefWidth="1195.0" styleClass="grad" stylesheets="@../assets/img/login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dmi.controller.PoOrderController">
+   <children>
+      <Label layoutX="561.0" layoutY="42.0" prefHeight="50.0" prefWidth="115.0" style="-fx-background-radius: 20;" styleClass="Lable" text=" PO Order">
+         <stylesheets>
+            <URL value="@../assets/img/login.css" />
+            <URL value="@../assets/img/Style.css" />
+         </stylesheets>
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TableView fx:id="lblMainPoOrder" layoutX="319.0" layoutY="104.0" prefHeight="502.0" prefWidth="871.0">
+        <columns>
+          <TableColumn fx:id="tblPoId" prefWidth="123.0" text="PO ID" />
+          <TableColumn fx:id="tblSupplier" prefWidth="159.0" text="SUPPLIER " />
+            <TableColumn fx:id="tblDescription" prefWidth="136.0" text="DESCRIPTION" />
+            <TableColumn fx:id="tblQty" prefWidth="73.0" text="QTY" />
+            <TableColumn fx:id="tblUnitPrice" minWidth="0.0" prefWidth="96.0" text="UNIT PRICE" />
+            <TableColumn fx:id="tblAmount" minWidth="0.0" prefWidth="96.0" text="AMOUNT" />
+            <TableColumn fx:id="tblUpdate" minWidth="0.0" prefWidth="96.0" text="UPDATE" />
+            <TableColumn fx:id="tblDelete" minWidth="0.0" prefWidth="96.0" text="DELETE" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="32.0" layoutY="104.0" prefHeight="502.0" prefWidth="278.0" style="-fx-background-radius: 30; -fx-background-color: WHITE;">
+         <children>
+            <JFXComboBox fx:id="cmbSid" layoutX="8.0" layoutY="14.0" prefHeight="25.0" prefWidth="187.0" promptText="SUPPLIER" />
+            <JFXTextField fx:id="txtPoID" layoutX="8.0" layoutY="50.0" prefHeight="30.0" prefWidth="187.0" promptText="PO ID">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtDescription" layoutX="8.0" layoutY="88.0" prefHeight="30.0" prefWidth="187.0" promptText="DESCRIPTION">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtQty" layoutX="8.0" layoutY="128.0" prefHeight="30.0" prefWidth="187.0" promptText="QUANTITY">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtUnitPrice" layoutX="8.0" layoutY="165.0" prefHeight="30.0" prefWidth="187.0" promptText="UNIT PRICE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="itemR" layoutX="52.0" layoutY="313.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#ItemBtn" prefHeight="44.0" prefWidth="175.0" styleClass="loginBtn" stylesheets="@../assets/img/Style.css" text="Item">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="itemR1" layoutX="52.0" layoutY="388.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#iiiii" prefHeight="44.0" prefWidth="175.0" styleClass="loginBtn" stylesheets="@../assets/img/Style.css" text="ll">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

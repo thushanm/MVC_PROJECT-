@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="583.0" prefWidth="652.0" style="-fx-background-color: lightGray;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dmi.controller.ReportController">
+   <children>
+      <AnchorPane fx:id="reportSubAnchor" layoutX="-6.0" layoutY="1.0" prefHeight="582.0" prefWidth="148.0" style="-fx-background-color: #1ccae3;">
+         <children>
+            <JFXButton layoutX="3.0" layoutY="153.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="42.0" prefWidth="128.0" styleClass="loginBtn" stylesheets="@../assets/img/Style.css" text="ADD PRODUCT">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="121.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img/76766794312f400d9d95df85c2d4948d.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="-3.0" layoutY="204.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="150.0" styleClass="loginBtn" stylesheets="@../assets/img/Style.css" text="MONTH REPORT">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="5.0" layoutY="256.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="42.0" prefWidth="128.0" styleClass="loginBtn" stylesheets="@../assets/img/Style.css" text="YEARLY REPPORT">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="-3.0" layoutY="152.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="42.0" prefWidth="140.0" styleClass="loginBtn" stylesheets="@../assets/img/Style.css" text="TODAY REPORT">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label layoutX="307.0" layoutY="14.0" style="-fx-background-color: yellow;" text="REPORTS">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

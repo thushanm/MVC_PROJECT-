@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="userAnchor" prefHeight="625.0" prefWidth="1185.0" styleClass="grad" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dmi.controller.UserController">
+   <children>
+      <Label layoutX="386.0" layoutY="14.0" prefHeight="39.0" prefWidth="104.0" style="-fx-background-radius: 20;" styleClass="Lable" text="   User">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+         <stylesheets>
+            <URL value="@../assets/img/login.css" />
+            <URL value="@../assets/img/Style.css" />
+         </stylesheets>
+      </Label>
+      <AnchorPane layoutX="83.0" layoutY="60.0" prefHeight="441.0" prefWidth="321.0" style="-fx-background-radius: 20; -fx-background-color: white;">
+         <children>
+            <JFXTextField fx:id="txtUid" layoutX="4.0" layoutY="31.0" prefHeight="25.0" prefWidth="305.0" promptText="User Id" />
+            <JFXTextField fx:id="txtName" layoutX="4.0" layoutY="74.0" prefHeight="25.0" prefWidth="305.0" promptText="User Name" />
+            <JFXTextField fx:id="txtPassword" layoutX="4.0" layoutY="121.0" prefHeight="25.0" prefWidth="305.0" promptText="Password" />
+            <JFXTextField fx:id="txtRole" layoutX="4.0" layoutY="167.0" prefHeight="25.0" prefWidth="305.0" promptText="Role" />
+            <JFXButton fx:id="btnSaveUser" layoutX="57.0" layoutY="286.0" onAction="#btnSaveUser" styleClass="loginBtn" stylesheets="@../assets/img/login.css" text="Save User" />
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@../assets/img/Style.css" />
+      <URL value="@../assets/img/login.css" />
+   </stylesheets>
+</AnchorPane>

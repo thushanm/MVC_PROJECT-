@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="WastageAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="1195.0" styleClass="grad" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dmi.controller.WastageController">
+   <children>
+      <Label layoutX="436.0" layoutY="49.0" prefHeight="44.0" prefWidth="103.0" style="-fx-background-radius: 20;" styleClass="Lable" stylesheets="@../assets/img/Style.css" text=" Wastage">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TableView layoutX="590.0" layoutY="187.0" prefHeight="342.0" prefWidth="529.0" AnchorPane.leftAnchor="590.0" AnchorPane.rightAnchor="76.0">
+         <columns>
+            <TableColumn prefWidth="88.0" text="Stock id" />
+            <TableColumn prefWidth="170.0" text="Reason" />
+            <TableColumn minWidth="6.0" prefWidth="92.0" text=" Date" />
+            <TableColumn minWidth="6.0" prefWidth="92.0" text="Quantity" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <AnchorPane layoutX="165.0" layoutY="210.0" prefHeight="313.0" prefWidth="249.0" style="-fx-background-color: WHITE; -fx-background-radius: 30;">
+         <children>
+            <JFXComboBox layoutX="30.0" layoutY="21.0" prefHeight="25.0" prefWidth="190.0" promptText="Stock Id" />
+            <JFXTextField layoutX="30.0" layoutY="71.0" prefHeight="25.0" prefWidth="176.0" text="Reason">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField layoutX="30.0" layoutY="132.0" prefHeight="25.0" prefWidth="176.0" text="Quantity">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <Button layoutX="86.0" layoutY="237.0" mnemonicParsing="false" styleClass="loginBtn" stylesheets="@../assets/img/Style.css" text="Wast">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <JFXDatePicker layoutX="30.0" layoutY="181.0" prefHeight="25.0" prefWidth="190.0" />
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@../assets/img/login.css" />
+      <URL value="@../assets/img/Style.css" />
+   </stylesheets>
+</AnchorPane>

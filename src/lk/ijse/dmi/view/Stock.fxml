@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="1194.0" styleClass="grad" stylesheets="@../assets/img/login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dmi.controller.StockController">
+   <children>
+      <AnchorPane fx:id="stockAnchor" layoutX="-6.0" layoutY="5.0" prefHeight="613.0" prefWidth="1157.0" AnchorPane.leftAnchor="-6.0">
+         <children>
+            <Label layoutX="394.0" layoutY="37.0" prefHeight="55.0" prefWidth="85.0" style="-fx-background-radius: 20;" styleClass="Lable" text="Stock">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+               <stylesheets>
+                  <URL value="@../assets/img/login.css" />
+                  <URL value="@../assets/img/Style.css" />
+               </stylesheets>
+            </Label>
+            <TableView fx:id="tblMainStock" layoutX="380.0" layoutY="174.0" prefHeight="401.0" prefWidth="698.0">
+               <columns>
+                  <TableColumn fx:id="tblStockID" prefWidth="85.0" text="STOCK ID" />
+                  <TableColumn fx:id="tblDescription" prefWidth="124.0" text="DESCRIPTION" />
+                  <TableColumn fx:id="tblQty" prefWidth="66.0" text="QUANTITY" />
+                  <TableColumn fx:id="tblDiscount" prefWidth="111.0" text="DISCOUNT" />
+                  <TableColumn fx:id="tblUPrice" prefWidth="93.0" text="UNIT PRICE" />
+                  <TableColumn fx:id="tblAmount" prefWidth="110.0" text="AMOUNT" />
+                  <TableColumn fx:id="tblEdit" prefWidth="110.0" text="EDIT" />
+               </columns>
+            </TableView>
+            <AnchorPane layoutX="109.0" layoutY="229.0" prefHeight="272.0" prefWidth="219.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+               <children>
+                  <JFXComboBox fx:id="cmbGrnId" labelFloat="true" layoutX="26.0" layoutY="14.0" prefHeight="44.0" prefWidth="157.0" promptText="Grn Id" />
+                  <Button layoutX="31.0" layoutY="197.0" mnemonicParsing="false" onAction="#addSaleitemBtn" styleClass="loginBtn" stylesheets="@../assets/img/Style.css" text="Add Sale item">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <JFXTextField fx:id="txtStockId" layoutX="23.0" layoutY="84.0" prefHeight="25.0" prefWidth="165.0" promptText="Stock Id" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

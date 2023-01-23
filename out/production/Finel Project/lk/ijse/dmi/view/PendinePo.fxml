@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="poOrderList" prefHeight="445.0" prefWidth="643.0" styleClass="grad" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dmi.controller.PendinePocontroller">
+   <stylesheets>
+      <URL value="@../assets/img/login.css" />
+      <URL value="@../assets/img/Style.css" />
+   </stylesheets>
+   <children>
+      <Label layoutX="242.0" layoutY="14.0" prefHeight="50.0" prefWidth="159.0" style="-fx-background-radius: 20;" styleClass="Lable" text=" PO Order List">
+         <stylesheets>
+            <URL value="@../assets/img/login.css" />
+            <URL value="@../assets/img/Style.css" />
+         </stylesheets>
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TableView layoutX="15.0" layoutY="81.0" prefHeight="333.0" prefWidth="614.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="PO ID" />
+          <TableColumn prefWidth="75.0" text="SUPPLIER" />
+            <TableColumn prefWidth="85.0" text="DESCRIPTION" />
+            <TableColumn prefWidth="75.0" text="QTY" />
+            <TableColumn prefWidth="75.0" text="DATE" />
+            <TableColumn prefWidth="75.0" text="TIME" />
+            <TableColumn prefWidth="75.0" text="UNIT PRICE" />
+            <TableColumn prefWidth="75.0" text="AMOUNT" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainDashBord" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dmi.controller.DashbordController">
+   <left>
+      <VBox prefHeight="526.0" prefWidth="173.0" style="-fx-background-color: #1ccae3;" styleClass="loginBtn" stylesheets="@../assets/img/login.css" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton maxWidth="1.7976931348623157E308" onAction="#posBtn" styleClass="loginBtn" stylesheets="@../assets/img/Style.css" text="POS">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/img/action/115799_shop_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" onAction="#grnBtn" styleClass="loginBtn" stylesheets="@../assets/img/Style.css" text="GRN">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/img/action/5813736_business_management_marketing_list_to%20do_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="10.0" layoutY="134.0" maxWidth="1.7976931348623157E308" onAction="#btnCustomer" styleClass="loginBtn" stylesheets="@../assets/img/Style.css" text="CUSTOMER">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/img/action/1370025_client_customer_human_man_member_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="10.0" layoutY="41.0" maxWidth="1.7976931348623157E308" onAction="#supplierBtn" styleClass="loginBtn" stylesheets="@../assets/img/Style.css" text="SUPPLIER">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/img/action/115779_vallet_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="10.0" layoutY="358.0" maxWidth="1.7976931348623157E308" onAction="#poBtn" prefHeight="42.0" prefWidth="134.0" styleClass="loginBtn" stylesheets="@../assets/img/Style.css" text="ITEM">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/img/action/7504221_add_item_plus_create_new_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="13.0" layoutY="367.0" maxWidth="1.7976931348623157E308" onAction="#userBtn1" prefHeight="42.0" prefWidth="134.0" styleClass="loginBtn" stylesheets="@../assets/img/Style.css" text="USER">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/img/action/1564534_customer_man_user_account_profile_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <AnchorPane fx:id="LableAnchor" prefHeight="79.0" prefWidth="768.0" style="-fx-background-color: #1ccae3;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="654.0" layoutY="14.0" text="Thushan" AnchorPane.rightAnchor="40.0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="38.0" layoutX="606.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="124.0">
+               <image>
+                  <Image url="@../assets/img/customer-login-icon-8.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="670.0" layoutY="47.0" onAction="#logout" style="-fx-background-color: yellow;" styleClass="loginBtn" stylesheets="@../assets/img/Style.css" text="Log out" AnchorPane.rightAnchor="40.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <AnchorPane layoutX="133.0" layoutY="26.0" prefHeight="27.0" prefWidth="299.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+               <children>
+                  <Label fx:id="timeLabel" layoutX="14.0" prefHeight="25.0" prefWidth="155.0" text="Label" textFill="#e40d0d">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dateLable" layoutX="186.0" prefHeight="25.0" prefWidth="155.0" text="Label" textFill="#e40d0d">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="64.0" fitWidth="76.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img/action/2924846_ecommerce_market_online_shop_store_icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane fx:id="dashbordAnchor" prefHeight="515.0" prefWidth="653.0" style="-fx-background-color: lightGray;" stylesheets="@../assets/img/login.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="154.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" />
+         </children></AnchorPane>
+   </center>
+</BorderPane>

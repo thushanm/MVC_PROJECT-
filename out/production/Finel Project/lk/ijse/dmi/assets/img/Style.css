@@ -1,0 +1,21 @@
+.Lable{
+    -fx-background-color: #efefb8;
+    -fx-border-radius: 20px;
+    -fx-border-width: 3px;
+    -fx-text-fill: BLACK;
+
+
+
+
+}
+.defaultFont{
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+.payment{
+    -fx-background-color: white;
+}
+.payment:hover{
+    -fx-background-color: #00FA9A;
+}
+

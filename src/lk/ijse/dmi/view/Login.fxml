@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="logAnchoerPane" prefHeight="400.0" prefWidth="600.0" styleClass="grad" stylesheets="@../assets/img/login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dmi.controller.LoginController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #1ccae3;">
+         <children>
+            <ImageView fitHeight="123.0" fitWidth="176.0" layoutX="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/img/76766794312f400d9d95df85c2d4948d.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="273.0" fitWidth="200.0" layoutX="2.0" layoutY="125.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/img/portrait-handsome-cartoon-businessman-character-man-blue-background-use-laptop-presentation-3d-render-illustration_174191-426.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="222.0" layoutY="16.0" prefHeight="369.0" prefWidth="364.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <Label fx:id="passWong" layoutX="125.0" layoutY="304.0" prefHeight="17.0" prefWidth="150.0" text="Password or Email Wong" textFill="#fc0303" visible="false">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <JFXTextField fx:id="userI" layoutX="270.0" layoutY="150.0" onAction="#userId" prefHeight="25.0" prefWidth="211.0" promptText="User Id">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="351.0" layoutY="255.0" onAction="#LoginBtn" styleClass="loginBtn" text="Log In">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <stylesheets>
+            <URL value="@../assets/img/login.css" />
+            <URL value="@../assets/img/Style.css" />
+         </stylesheets>
+      </JFXButton>
+      <JFXPasswordField fx:id="userP" layoutX="270.0" layoutY="210.0" onAction="#loginPwd" prefHeight="25.0" prefWidth="211.0" promptText="Password">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <ImageView fitHeight="50.0" fitWidth="73.0" layoutX="351.0" layoutY="87.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/img/ZanyFrayedAplomadofalcon-max-1mb.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

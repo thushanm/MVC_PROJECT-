@@ -1,0 +1,45 @@
+.grad{
+    -fx-background-color:gray;
+}
+.loginBtn{
+    -fx-background-color: #1ccae3;
+    -fx-border-color: Blue;
+    -fx-border-radius: 30px;
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-font-size: 20px;
+
+    -fx-background-radius: 30px;
+    -fx-border-width: 3px;
+
+
+}
+.loginBtn:hover{
+
+    -fx-background-color: YELLOW;
+    -fx-border-radius: 20px;
+    -fx-border-width: 3px;
+
+
+
+}
+
+.welcome{
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-font-size: 35px;
+    -fx-background-color:  #37A957;
+}
+.txtfild{
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-font-size: 18px;
+
+}
+.txtpswrd{
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-font-size: 15px;
+
+}
+
+combo-box .text-field {
+   -fx-prompt-text-fill: bolt
+}
+
